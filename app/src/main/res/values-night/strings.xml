@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="introscreen_start">START</string>
+    <string name="introscreen_createpassword">Create a Password</string>
+    <string name="introscreen_createPassword_bottomButton_text">Let´s Go!</string>
+    <string name="introscreen_passwordHint">Password</string>
+    <string name="submitscreen_submitText">Submit</string>
+    <string name="fillform_title">Track your wellness</string>
+    <string name="fillform_howDoYouFeel">How do you feel?</string>
+    <string name="fillform_howDoYouFeel_goodAnswer">Perfect, thank you!</string>
+    <string name="fillform_howDoYouFeel_regularAnswer">Meh, I´m alive</string>
+    <string name="fillform_howDoYouFeel_badAnswer">Worst day ever</string>
+    <string name="fillform_sleepWell">Did you sleep well?</string>
+    <string name="yes">Yes</string>
+    <string name="bowhead_yes">Yes</string>
+    <string name="bowhead_no">No</string>
+    <string name="logs_title">Answer logs</string>
+    <string name="logs_feeling">Feeling:</string>
+    <string name="logs_sleepQuality">Sleep quality:</string>
+</resources>

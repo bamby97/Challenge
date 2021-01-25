@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="introscreen_bottomButton_width">273dp</dimen>
+    <dimen name="introscreen_bottomButton_height">72dp</dimen>
+    <dimen name="app_paddingStartLeft">21dp</dimen>
+    <dimen name="radioButton_paddingToText">8dp</dimen>
+</resources>
