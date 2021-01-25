@@ -34,7 +34,7 @@ object Web3Client {
             //if the client version has an error the user will not gain access if successful the user will get connnected
             val clientVersion: Web3ClientVersion = web3.web3ClientVersion().sendAsync().get()
             if (!clientVersion.hasError()) {
-                Log.d("Connected!", "we are connected")
+                Log.d("Connected!", "we are connected to Eth")
             } else {
                 Log.e("Error connecting to eth", clientVersion.error.message)
                 throw java.lang.Exception(clientVersion.error.message)
