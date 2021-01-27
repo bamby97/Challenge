@@ -114,7 +114,7 @@ class GenerateWalletFragment : Fragment() {
 
     fun showError(e:String?){
         alertDialog.changeAlertType(SweetAlertDialog.ERROR_TYPE)
-        alertDialog.titleText=e?:"Error"
+        alertDialog.titleText= e ?: "Error"
         alertDialog.setCancelable(true)
         alertDialog.show()
     }

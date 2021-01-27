@@ -21,9 +21,10 @@ import org.web3j.tx.gas.DefaultGasProvider
 object Web3Client {
     private const val URL="https://rinkeby.infura.io/v3/b1e7407912744890b54e9dc336ae31c4"
     private const val CONTRACT_ADDRESS="0xc7c44c64DBddA29e2723FD1056ab876A54ef24CE"
-    private val GAS_LIMIT= BigInteger.valueOf(10000000)
-    private val GAS_PRICE= BigInteger.valueOf(4300000)
+    private val GAS_LIMIT= BigInteger.valueOf(9300000)
+    private val GAS_PRICE= BigInteger.valueOf(10000000)
     private val web3:Web3j=Web3j.build(InfuraHttpService(URL))
+    private val gasProvider=DefaultGasProvider()
 
 
     fun getWeb3j():Web3j{
@@ -47,9 +48,8 @@ object Web3Client {
         val sleepDuration = 15 * 1000
         val attempts = 8 // DEFAULT_POLLING_ATTEMPTS_PER_TX_HASH = 40
 
-        val transactionManager: TransactionManager = RawTransactionManager(web3, credentials, attempts, sleepDuration)
+        val transactionManager: TransactionManager = RawTransactionManager(web3, credentials)
         return ContractWrapper.load(CONTRACT_ADDRESS,web3,transactionManager, GAS_PRICE, GAS_LIMIT)
-                //.load(CONTRACT_ADDRESS, web3, credentials, DefaultGasProvider())
     }
 
 }
